@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="1078.0" style="-fx-background-color:&#10;white" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="carojamaproyecto.MiPerfilController">
+  <children>
+    <Pane fx:id="paneTextoColecciones" layoutX="864.0" layoutY="0.0" prefHeight="53.0" prefWidth="216.0" style="-fx-background-color:&#10;#587180">
+      <children>
+        <Label fx:id="lbColecciones" layoutX="46.0" layoutY="12.0" prefHeight="29.0" prefWidth="109.0" text="Colecciones" textAlignment="CENTER">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+    <Pane fx:id="paneBotonVentas" layoutX="864.0" layoutY="467.0" prefHeight="82.99990000000253" prefWidth="214.0001220703125" style="-fx-background-color:&#10;#587180">
+      <children>
+        <Button id="btnVentas" fx:id="btnBotonVentas" layoutX="63.0" layoutY="31.0" mnemonicParsing="false" onAction="#clicBotonVentas" prefWidth="89.0" text="Lotes" />
+      </children>
+    </Pane>
+    <ScrollPane layoutX="864.0" layoutY="53.0" prefHeight="387.0" prefWidth="213.0" style="-fx-background-color:&#10;#587180">
+      <content>
+        <AnchorPane id="Content" fx:id="scrollPaneSecundario" minHeight="0.0" minWidth="0.0" prefHeight="387.0" prefWidth="197.0" style="-fx-background-color:&#10;#587180" />
+      </content>
+    </ScrollPane>
+    <Pane id="paneTerciario" fx:id="paneBotonesAgregar" layoutX="864.0" layoutY="440.0" prefHeight="29.0" prefWidth="213.0001220703125" style="-fx-background-color:&#10;#587180">
+      <children>
+        <Button fx:id="btnAddColeccion" layoutX="107.0" layoutY="14.0" mnemonicParsing="false" onAction="#clicAddColeccion" text="+Coleccion" />
+        <Button fx:id="btnAddArticulo" layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#clicAddArticulo" text="+Articulo" />
+      </children>
+    </Pane>
+    <TilePane fx:id="gpVistaColecciones" layoutX="0.0" layoutY="0.0" prefHeight="551.0" prefWidth="864.0000999999975" style="-fx-background-color:&#10;gray" />
+  </children>
+</AnchorPane>
